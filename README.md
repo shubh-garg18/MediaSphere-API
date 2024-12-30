@@ -4,6 +4,10 @@
 
 This project is a backend application built with Node.js, Express, and MongoDB. It includes user authentication, video management, and subscription features.
 
+## Design of the Product
+
+- [Model Plan](https://app.eraser.io/workspace/2TWx9snfpMGU0wkG6iSy?origin=share)
+
 ## Installation
 
 1. Clone the repository:
