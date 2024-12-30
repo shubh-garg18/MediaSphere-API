@@ -6,7 +6,7 @@ This project is a backend application built with Node.js, Express, and MongoDB. 
 
 ## Design of the Product
 
-- [Model Plan](https://app.eraser.io/workspace/2TWx9snfpMGU0wkG6iSy?origin=share)
+- [Model Design](https://app.eraser.io/workspace/2TWx9snfpMGU0wkG6iSy?origin=share)
 
 ## Installation
 
@@ -46,7 +46,7 @@ This project is a backend application built with Node.js, Express, and MongoDB. 
     npm test
     ```
 
-## Technologies Used
+## Packages Used
 
 - bcrypt
 - cloudinary
