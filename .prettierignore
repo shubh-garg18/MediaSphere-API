@@ -1,0 +1,48 @@
+/.vscode
+/node_modules
+./dist
+
+*.env
+.env
+.env.*
+
+
+const playlists = await Playlist.aggregate([
+        {
+            $match: {
+                owner: mongoose.Types.ObjectId(userId),
+            },
+        },
+        {
+            $lookup: {
+                from: "users",
+                localField: "owner",
+                foreignField: "_id",
+                as: "owner",
+                pipeline: [
+                    {
+                        $project: {
+                            username: 1,
+                            avatar: 1,
+                        },
+                    },
+                ]
+            },
+        },
+        {
+            $project: {
+                name: 1,
+                description: 1,
+                owner: {
+                    $first: "$owner",
+                },
+                createdAt: 1,
+                updatedAt: 1,
+            },
+        },
+        {
+            $sort: {
+                createdAt: -1,
+            },
+        },
+    ])
